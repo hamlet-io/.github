@@ -2,10 +2,11 @@
 name: Feature request
 about: Suggest an idea for this project
 title: ''
-labels: 'enhancement'
-assignees: '@hamlet-io/engine-maintainers'
+labels: enhancement
+assignees: ''
 
 ---
+
 ## Expected Behaviour
 <!-- How do you think it might work? -->
 
