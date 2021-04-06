@@ -1,5 +1,4 @@
 ## Intent of Change
-<!--- What types of changes does your code introduce?  -->
 <!-- Delete all that do not apply                      -->
 - Documentation (new or update to existing)
 - Bug fix (non-breaking change which fixes an issue)
