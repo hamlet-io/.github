@@ -1,5 +1,3 @@
-<!--- Provide a general summary of your changes in the Title above -->
-
 ## Intent of Change
 <!--- What types of changes does your code introduce?  -->
 <!-- Delete all that do not apply                      -->
