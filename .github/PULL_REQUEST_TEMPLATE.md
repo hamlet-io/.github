@@ -24,10 +24,3 @@
     Add a checklist of items or leave the default of "None"
 -->
 - [x] None
-
-## Checklist
-<!--- Review the following checklist to ensure you're Pull Request is complete.               -->
-- Does the Pull Request follow the [Contributing Guide](https://github.com/hamlet-io/.github/blob/main/CONTRIBUTING.md)?
-- Do any new tickets need to be created as a result of this change?
-- Have you run all available tests?
-- Does the PR reference any related Issues?
