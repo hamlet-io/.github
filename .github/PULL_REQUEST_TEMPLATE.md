@@ -15,12 +15,16 @@
 ## How Has This Been Tested?
 <!--- Include details of your testing environment, official tests or other methods -->
 
-## Followup Actions
+## Related Changes
 <!---
     Are the changes mandatory (breaking) or optional?
+
     What changes must a consumer of this repository make in order to utilise it?
-    Are there other issues or steps that need to happen once this PR is merged?
+
+    Are there other issues or steps that need to happen BEFORE this PR is merged? Start a list of these with the keyword "Prerequisite PRs:"
+
+    Are there other issues or steps that need to happen AFTER this PR is merged? Start a list of these with the keyword "Dependent PRs:"
 
     Add a checklist of items or leave the default of "None"
 -->
-- [x] None
+- None
