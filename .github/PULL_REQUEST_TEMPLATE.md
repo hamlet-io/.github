@@ -15,12 +15,20 @@
 ## How Has This Been Tested?
 <!--- Include details of your testing environment, official tests or other methods -->
 
-## Followup Actions
-<!---
-    Are the changes mandatory (breaking) or optional?
-    What changes must a consumer of this repository make in order to utilise it?
-    Are there other issues or steps that need to happen once this PR is merged?
+## Related Changes
+<!--- If anything not covered by the headings below, add here  -->
 
-    Add a checklist of items or leave the default of "None"
+### Prerequisite PRs:
+<!--- Add a checklist of items or leave the default of "None" -->
+- None
+
+### Dependent PRs:
+<!--- Add a checklist of items or leave the default of "None" -->
+- None
+
+### Consumer Actions:
+<!--- Add a checklist of items or leave the default of "None"
+What changes must a consumer of this repository make in order to utilise it?
 -->
-- [x] None
+- None
+
