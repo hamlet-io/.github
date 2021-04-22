@@ -25,7 +25,7 @@ assignees: ''
 
 ## Your Environment
 * CMDB Version used: <!-- listed in .cmdb in the root of your cmdb -->
-* Blueprint: <!-- output of "cot create blueprint" -->
+* Blueprint: <!-- output of "hamlet entrance invoke-entrance -e blueprint" -->
 
 <!-- please ensure you redact any secure or personally identifying information -->
 <!-- Include as many relevant details about the environment you experienced the bug in -->
