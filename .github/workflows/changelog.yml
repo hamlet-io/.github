@@ -1,0 +1,41 @@
+name: changelog
+
+on:
+  workflow_call:
+
+jobs:
+  create_changelog:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: install
+        run: |
+          # Workaround for https://github.com/KeNaCo/auto-changelog/issues/113
+          pip install auto-changelog && pip uninstall markupsafe -y && pip install markupsafe==2.0.1
+
+      - name: generate
+        env:
+          REPO: ${{github.repository}}
+        run: |
+          auto-changelog --unreleased --latest-version latest \
+            --remote "https://github.com/${REPO}.git" \
+            --diff-url "https://github.com/${REPO}/compare/{previous}...{current}" \
+            --issue-url "https://github.com/${REPO}/issues/{id}"
+
+      - name: change log PR
+        uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: "chore: update changelog"
+          delete-branch: true
+          title: 'chore: update changelog'
+          body: |
+            Updates the changelog with the latest updates
+            This should be merged before tagging a new release to show the latest changes
+          labels: 'chore'
+          branch: create-pull-request/changelog_bump
+          draft: true
