@@ -9,9 +9,6 @@ on:
       dockerImageTarget:
         default: base_package
         type: string
-    secrets:
-      GITHUB_TOKEN:
-        required: true
 
 jobs:
   package:
