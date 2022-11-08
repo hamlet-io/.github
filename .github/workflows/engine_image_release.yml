@@ -42,7 +42,7 @@ jobs:
             latest=auto
           tags: |
             type=semver,pattern={{version}}
-            type=edge,branch={{inputs.defaultBranchName}}
+            type=edge,branch=${{ inputs.defaultBranchName }}
             type=sha
 
       - name: build and push container
