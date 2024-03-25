@@ -9,14 +9,9 @@ jobs:
 
     steps:
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
-      - name: install
-        run: |
-          # Workaround for https://github.com/KeNaCo/auto-changelog/issues/113
-          pip install auto-changelog && pip uninstall markupsafe -y && pip install markupsafe==2.0.1
 
       - name: generate
         env:
@@ -28,7 +23,7 @@ jobs:
             --issue-url "https://github.com/${REPO}/issues/{id}"
 
       - name: change log PR
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v6
         with:
           commit-message: "chore: update changelog"
           delete-branch: true
